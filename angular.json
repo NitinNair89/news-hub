@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-MDB-Starter": {
+    "news-live": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-MDB-Starter",
+            "outputPath": "dist/news-live",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-MDB-Starter:build"
+            "browserTarget": "news-live:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Angular-MDB-Starter:build:production"
+              "browserTarget": "news-live:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-MDB-Starter:build"
+            "browserTarget": "news-live:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Angular-MDB-Starter:serve"
+            "devServerTarget": "news-live:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Angular-MDB-Starter:serve:production"
+              "devServerTarget": "news-live:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Angular-MDB-Starter"
+  "defaultProject": "news-live"
 }
